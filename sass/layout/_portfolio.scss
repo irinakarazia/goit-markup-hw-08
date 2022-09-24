@@ -1,0 +1,114 @@
+.portfolio-menu {
+    @extend %align;
+    gap: 8px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portfolio-project {
+    display: block;
+    width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEEEEE;
+    background-color: var(--primary-white-color);
+}
+
+.portfolio-project-link {
+    display: block;
+    transition: box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+     &:focus {
+         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
+}
+
+.portfolio-project-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--primary-white-color);
+    transform: translateY(100%);
+    transition: var(--transition-dur-and-func);
+
+    .portfolio-project-link:hover &,
+    .portfolio-project-link:focus & {
+        transform: translateY(0%);
+    }
+}
+
+.portfolio-project-name {
+    padding: 20px 24px;
+    padding: 20px 24px;
+}
+
+.portfolio-project-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+}
+
+.portfolio-project-item {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--secondary-text-color);
+}
+
+.portfolio-btn {
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background-color: #F5F4FA;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: #2196F3;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      }
+}
+
+.portfolio-btn-text {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-btn.active {
+    min-width: 73px;
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}

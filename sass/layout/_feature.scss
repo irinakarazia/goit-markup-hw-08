@@ -1,0 +1,30 @@
+.feature-list {
+    display: flex;
+    gap: 30px;
+}
+
+.feature-list__item {
+    width: 270px;
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.feature-item__wrapper {
+    @extend %align;
+    height: 120px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.feature-list__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature-list__text {
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
