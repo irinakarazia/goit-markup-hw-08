@@ -33,12 +33,14 @@
     
         .mobile-menu-close-btn {
             position: absolute;
-            top: 10;
-            right: 15;
+            top: 10px;
+            right: 15px;
             background-color: transparent;
             border: 0;
             padding: 0;
             line-height: 0;
+            width: 40px;
+            height: 40px;
     
             transition: fill var(--transition-dur-and-func);
     
@@ -47,12 +49,7 @@
                 fill: var(--accent-color);
             }
         }
-    
-        .mobile-menu-close-icon {
-            width: 40px;
-            height: 40px;
-        }
-    
+              
         .nav-mobile-menu-list {
             padding-top: 48px;
         }
