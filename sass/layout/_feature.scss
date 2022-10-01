@@ -1,20 +1,6 @@
-.feature-list {
-    display: flex;
-    gap: 30px;
-}
-
-.feature-list__item {
-    width: 270px;
-    flex-basis: calc((100% - 90px) / 4);
-}
-
-.feature-item__wrapper {
-    @extend %align;
-    height: 120px;
-    margin-bottom: 30px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: #F5F4FA;
+.feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .feature-list__title {
@@ -28,3 +14,80 @@
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
+.feature-item__wrapper {
+    @extend %align;
+    height: 120px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 767px) {
+    .feature-list__item {
+            width: 450px; 
+            margin-bottom: 30px;
+                     
+        }
+      
+                .feature-list__title {
+                    text-align: center;
+                }
+}
+
+@media screen and (min-width: 768px) {
+        .feature-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+
+        .feature-list__item {
+            width: 354px;
+            flex-basis: calc((100% - 30px) / 2);
+        }
+
+}
+
+@media screen and (min-width: 1200px) {
+       
+        .feature-list__item {
+            width: 270px;
+            flex-basis: calc((100% - 90px) / 4);
+        }
+
+}
+
+
+// .feature-list {
+//     display: flex;
+//     gap: 30px;
+// }
+
+// .feature-list__item {
+//     width: 270px;
+//     flex-basis: calc((100% - 90px) / 4);
+// }
+
+// .feature-item__wrapper {
+//     @extend %align;
+//     height: 120px;
+//     margin-bottom: 30px;
+//     border: 1px solid transparent;
+//     border-radius: 4px;
+//     background-color: #F5F4FA;
+// }
+
+// .feature-list__title {
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+// }
+
+// .feature-list__text {
+//     line-height: 1.71;
+//     color: var(--secondary-text-color);
+// }

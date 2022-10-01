@@ -36,6 +36,11 @@
             </ul>
           </div>
         </nav>
+        <button type="button" class="open-mobile-menu-btn" data-menu-open>
+          <svg class="open-mobile-menu-btn-icon">
+            <use href="./images/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
         <ul class="contact list">
           <li class="contact-item">
             <a class="contact-email-adress link" href="mailto:info@devstudio.com">
@@ -53,8 +58,58 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">         
+          <button type="button" class="mobile-menu-close-btn" data-menu-close>
+            <svg class="mobile-menu-close-icon">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-wrapper">
+            <nav class="nav-mobile-menu">
+            <ul class="nav-mobile-menu-list list">
+              <li class="nav-mobile-menu-item">
+                <a class="nav-mobile-menu-link link current" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-mobile-menu-item">
+                <a class="nav-mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-mobile-menu-item"><a class="nav-mobile-menu-link link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact-list list">
+            <li class="mobile-contact-item">
+              <a class="mobile-contact-phone-number link" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contact-item">
+              <a class="mobile-contact-email-adress link" href="mailto:info@devstudio.com">                
+                info@devstudio.com </a>
+            </li>            
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-link link">
+                Instagram </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-link link">
+                Twitter </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-link link">
+                Facebook </a>
+            </li>
+            <li class="mobile-social-list-item">
+              <a href="#" class="mobile-social-list-link link">
+                LinkedIn </a>
+            </li>
+            </div>
+        </div>
+      </div>
     </header>
     <main>
+        <!--Hero-->
       <section class="hero section">
         <div class="container hero-container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
@@ -120,7 +175,7 @@
       </section>
       <!--Чим займаємось-->
       <section class="speciality section">
-        <div class="container">
+        <div class="container ">
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="speciality-list list">
             <li class="speciality-list__item">
@@ -459,7 +514,7 @@
       </section>
     </main>
     <!--Футер-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-adress-container">
           <a class="logo footer-logo link" href="./index.html"> <span class="accent">Web</span>Studio</a>
@@ -531,9 +586,9 @@
           </form>          
         </div>
       </div>
-    </footer>
+    </footer> -->
    <!--Модальне вікно-->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11" >
@@ -584,8 +639,14 @@
        <button type="submit" class="modal-form-submit">Відправити</button>
         </form>
       </div>
-    </div>
+    </div> -->
+
+    
+  
     <script src="./js/modal.js"></script>
+
+      <script src="./js/menu.js"></script>
+
   </body>
 </html>
 
