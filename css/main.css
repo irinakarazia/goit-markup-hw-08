@@ -488,8 +488,6 @@ ul {
 }
 .page-header {
   height: 80px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border: 1px solid #ECECEC;
 }
 
@@ -525,6 +523,7 @@ ul {
     column-gap: 50px;
   }
   .nav-menu-link {
+    display: block;
     position: relative;
     font-weight: 500;
     line-height: 1.14;
@@ -614,7 +613,7 @@ ul {
 }
 
 .hero-title {
-  width: 360px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -1249,9 +1248,36 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: baseline;
+  }
+  .footer-adress-container {
+    margin-left: 0;
+    margin-bottom: 0;
+    text-align: left;
   }
   .footer-social-container {
     margin-left: 70px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .footer-mailing-list-container {
+    width: auto;
+    margin-left: 93px;
+    margin-right: 0;
+    text-align: left;
+  }
+  .footer-form {
+    display: flex;
+    align-items: center;
+  }
+  .footer-mailing-list-input {
+    width: 358px;
+  }
+  .footer-mailing-list-submit {
+    margin-top: 0;
+    margin-left: 12px;
+    margin-right: 0;
   }
 }/*# sourceMappingURL=main.css.map */
