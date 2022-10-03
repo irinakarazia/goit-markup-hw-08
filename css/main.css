@@ -667,7 +667,13 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
+    display: flex;
+    align-items: center;
     min-width: 768px;
+    height: 400px;
+  }
+  .hero-title {
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
