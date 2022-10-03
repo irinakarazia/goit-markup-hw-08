@@ -1,31 +1,49 @@
+.clients {
+    min-width: 320px;
+}
+
 
 .clients-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 30px;
-     
-}
 
-.client-item {
-    width: calc((100% - 30px) / 2);
 }
 
 .client-link {
-   @extend %align;
-    width: 210px;
+    @extend %align;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: var(--icon-color);
     transition: color var(--transition-dur-and-func),
-    border var(--transition-dur-and-func);
+        border var(--transition-dur-and-func);
 
     &:hover,
     &:focus {
         border-color: var(--accent-color);
         color: var(--accent-color);
-     }
+    }
+
+    @media screen and (max-width: 479px) {
+        width: 130px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
+
+    transition: border-color var(--transition-dur-and-func);
 }
 
 .client-icon {
@@ -37,12 +55,13 @@
     .client-item {
         width: calc((100% - 60px) / 3);
     }
+
     .client-link {
         width: 226px;
         height: 92px;
     }
-    
-    
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -52,11 +71,11 @@
         column-gap: 30px;
     }
 
-    .client-link {       
+    .client-link {
         width: 170px;
-        height: 92px;    
+        height: 92px;
     }
-   
+
 }
 
 // .clients-list {

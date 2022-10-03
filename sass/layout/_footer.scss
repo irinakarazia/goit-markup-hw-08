@@ -2,15 +2,16 @@
     background-color: var(--primary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    
+    min-width: 320px;
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
+
 .footer-adress-container {
     text-align: center;
     margin-bottom: 60px;
@@ -48,9 +49,9 @@
     transition: color var(--transition-dur-and-func);
 
     &:hover,
-     &:focus {
-         color: var(--accent-color);
-        }
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer-phone-number {
@@ -62,10 +63,11 @@
     transition: color var(--transition-dur-and-func);
 
     &:hover,
-     &:focus {
+    &:focus {
         color: var(--accent-color);
-      }
+    }
 }
+
 .footer-social-container {
     margin-bottom: 60px;
 }
@@ -97,9 +99,9 @@
     transition: background-color var(--transition-dur-and-func);
 
     &:hover,
-     &:focus {
-         background-color: var(--accent-color);
-     }
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
 
 .footer-icon {
@@ -141,15 +143,15 @@
 
     &:focus {
         outline: none;
-         border-color: var(--accent-color);
-     }
+        border-color: var(--accent-color);
+    }
 
-     &::placeholder {
-         font-size: 16px;
-         line-height: 1.25;
-         letter-spacing: 0.03em;
-         color: rgba(255, 255, 255, 0.6);
-      }
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .footer-mailing-list-submit {
@@ -165,7 +167,7 @@
     border-radius: 4px;
     font-family: inherit;
     @include font(16px, 700, 1.87);
-       text-align: center;
+    text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: #2196F3;
@@ -173,10 +175,10 @@
     transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 
     &:hover,
-     &:focus {
+    &:focus {
         background-color: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-     }
+    }
 }
 
 
@@ -191,7 +193,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
-               
+
     }
 
     .footer-adress-container {
@@ -203,7 +205,7 @@
         margin-right: auto;
     }
 
-    .footer-mailing-list-container {     
+    .footer-mailing-list-container {
         margin-left: auto;
         margin-right: auto;
     }
@@ -211,44 +213,46 @@
 
 @media screen and (min-width: 1200px) {
     .footer-container {
-        display: flex;        
-            flex-direction: row;
-            flex-wrap: nowrap;
-            align-items: baseline;
-              
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+
     }
+
     .footer-adress-container {
         margin-left: 0;
         margin-bottom: 0;
-            text-align: left;
-                   
-        }
-    
+        text-align: left;
+
+    }
+
 
     .footer-social-container {
-         margin-left: 70px;
-         margin-right: 0;
-         margin-bottom: 0;
-     }
+        margin-left: 70px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
 
     .footer-mailing-list-container {
-       width: auto;
+        width: auto;
         margin-left: 93px;
-        margin-right: 0;     
+        margin-right: 0;
         text-align: left;
-    
+
     }
 
     .footer-form {
         display: flex;
         align-items: center;
-       
-        }
+
+    }
 
     .footer-mailing-list-input {
         width: 358px;
 
     }
+
     .footer-mailing-list-submit {
         margin-top: 0;
         margin-left: 12px;
@@ -396,7 +400,7 @@
 //         outline: none;
 //          border-color: var(--accent-color);
 //      }
-    
+
 //      &::placeholder {
 //          font-size: 16px;
 //          line-height: 1.25;
